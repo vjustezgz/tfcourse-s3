@@ -3,6 +3,11 @@
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "${var.bucket_name}"
 
+   tags = {
+    Name        = "vic_bucket"
+    Environment = "Dev"
+  }
+
 }
 
 resource "aws_s3_bucket_versioning" "this" {
