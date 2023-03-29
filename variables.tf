@@ -11,3 +11,14 @@ variable "versioning" {
   default     = false
 }
 
+variable "tag_bucket_name" {
+  description = "tag_bucket_name"
+  type = string
+  default     = "test"
+}
+
+variable "tag_bucket_env" {
+  description = "tag_bucket_env"
+  type = string
+  default = "test"
+}
